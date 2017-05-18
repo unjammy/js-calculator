@@ -51,6 +51,9 @@
    * @param  { Number } x
    */
 
+   var multiply = function multiply(value){
+    total = total * value;
+   }
 
   /**
    * Divides the value passing in by `total`
@@ -82,6 +85,7 @@
     load: load,
     getTotal: getTotal,
     add: add,
-    subtract: subtract
+    subtract: subtract,
+    multiply: multiply
    }
  };
