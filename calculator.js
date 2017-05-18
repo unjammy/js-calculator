@@ -15,15 +15,18 @@
    * @return { Number }    current total
    */
 
-   var load = function load(value){
+   var load = function (value){
       total = value;
+      return total;
    };
 
   /**
    * Return the value of `total`
    * @return { Number }
    */
-
+   var getTotal = function getTotal(){
+      return total;
+   };
 
   /**
    * Sums the value passed in with `total`
@@ -70,6 +73,7 @@
 
 
    return {
-    load: load
+    load: load,
+    getTotal: getTotal
    }
  };
