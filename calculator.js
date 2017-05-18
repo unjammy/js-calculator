@@ -100,7 +100,7 @@
 
    var validate = function validate(value){
     if( !(typeof value === 'number') ){
-      throw new error();
+      throw new error('Something went wrong...');
     }
    };
 
