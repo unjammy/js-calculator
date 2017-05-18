@@ -55,6 +55,7 @@
    */
 
    var multiply = function multiply(value){
+    validate(value);
     total = total * value;
    }
 
@@ -64,6 +65,7 @@
    */
 
    var divide = function divide(value){
+    validate(value);
     total = total / value;
    };
 
