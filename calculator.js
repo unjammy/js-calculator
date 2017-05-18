@@ -33,6 +33,9 @@
    * @param { Number } x
    */
 
+   var add = function add(value){
+    total = total + value;
+   }
 
   /**
    * Subtracts the value passed in from `total`
@@ -74,6 +77,7 @@
 
    return {
     load: load,
-    getTotal: getTotal
+    getTotal: getTotal,
+    add: add
    }
  };
