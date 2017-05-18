@@ -35,7 +35,7 @@
 
    var add = function add(value){
     total = total + value;
-   }
+   };
 
   /**
    * Subtracts the value passed in from `total`
@@ -44,7 +44,7 @@
 
    var subtract = function subtract(value){
     total = total - value;
-   }
+   };
 
   /**
    * Multiplies the value by `total`
@@ -60,17 +60,26 @@
    * @param  { Number } x
    */
 
+   var divide = function divide(value){
+    total = total / value;
+   };
 
   /**
    * Return the value stored at `memory`
    * @return { Number }
    */
 
+   var recallMemory = function recallMemory(){
+    return memory;
+   };
 
   /**
    * Stores the value of `total` to `memory`
    */
 
+   var saveMemory = function saveMemory(){
+    memory = total;
+   };
 
   /**
    * Clear the value stored at `memory`
@@ -86,6 +95,9 @@
     getTotal: getTotal,
     add: add,
     subtract: subtract,
-    multiply: multiply
-   }
+    multiply: multiply,
+    divide: divide,
+    recallMemory: recallMemory,
+    saveMemory: saveMemory
+   };
  };
