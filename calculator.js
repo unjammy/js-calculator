@@ -16,6 +16,7 @@
    */
 
    var load = function (value){
+      validate(value);
       total = value;
       return total;
    };
@@ -85,10 +86,19 @@
    * Clear the value stored at `memory`
    */
 
+   var clearMemory = function clearMemory(){
+    memory = 0;
+   };
+
   /**
    * Validation
    */
 
+   var validate = function validate(value){
+    if( !(typeof value === 'number') ){
+      throw new error();
+    }
+   };
 
    return {
     load: load,
@@ -98,6 +108,8 @@
     multiply: multiply,
     divide: divide,
     recallMemory: recallMemory,
-    saveMemory: saveMemory
+    saveMemory: saveMemory,
+    clearMemory: clearMemory,
+    validate: validate
    };
  };
