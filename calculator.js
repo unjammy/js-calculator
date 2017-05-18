@@ -35,6 +35,7 @@
    */
 
    var add = function add(value){
+    validate(value);
     total = total + value;
    };
 
@@ -44,6 +45,7 @@
    */
 
    var subtract = function subtract(value){
+    validate(value);
     total = total - value;
    };
 
