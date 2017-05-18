@@ -42,6 +42,9 @@
    * @param  { Number } x
    */
 
+   var subtract = function subtract(value){
+    total = total - value;
+   }
 
   /**
    * Multiplies the value by `total`
@@ -78,6 +81,7 @@
    return {
     load: load,
     getTotal: getTotal,
-    add: add
+    add: add,
+    subtract: subtract
    }
  };
